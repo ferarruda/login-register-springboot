@@ -23,8 +23,8 @@ public class UsersService {
 
         Optional<Users> user = userRepo.findById(loginRequest.getUserId());
 
-        if(user == null) {
-            return false;
+        if(user.isEmpty()) {
+        return false;
         }
 
         Users user1 = user.get();

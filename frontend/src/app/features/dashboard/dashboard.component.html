@@ -1,0 +1,47 @@
+<mat-toolbar class="topbar">
+  <span class="brand">
+    <mat-icon>bolt</mat-icon>
+    <strong>Arruda Platform</strong>
+  </span>
+  <span class="spacer"></span>
+  <div class="avatar" [attr.title]="displayName()">{{ initials() }}</div>
+  <button mat-stroked-button color="primary" (click)="logout()" class="logout">
+    <mat-icon>logout</mat-icon>
+    Sair
+  </button>
+</mat-toolbar>
+
+<main class="content">
+  <mat-card class="welcome">
+    <div class="welcome-text">
+      <span class="eyebrow">Dashboard</span>
+      <h1>Olá, {{ displayName() }} 👋</h1>
+      <p>Você está autenticado com sucesso. A partir daqui você pode evoluir seu app integrando com o backend Spring Boot.</p>
+      <div class="actions">
+        <button mat-flat-button color="primary">
+          <mat-icon>rocket_launch</mat-icon>
+          Começar
+        </button>
+        <button mat-flat-button color="primary">
+          <mat-icon>menu_book</mat-icon>
+          Documentação
+        </button>
+      </div>
+    </div>
+    <div class="welcome-art" aria-hidden="true"></div>
+  </mat-card>
+
+  <section class="grid">
+    @for (item of [
+      {icon: 'shield', title: 'Sessão ativa', desc: 'Autenticação protegida por route guard.'},
+      {icon: 'speed', title: 'Performance', desc: 'Angular 20 standalone + lazy loading.'},
+      {icon: 'palette', title: 'Design moderno', desc: 'Paleta azul, cinza e branco com Material.'}
+    ]; track item.title) {
+      <mat-card class="tile">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </mat-card>
+    }
+  </section>
+</main>
