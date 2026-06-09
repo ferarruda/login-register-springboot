@@ -1,22 +1,35 @@
-# Login Register System - Spring Boot + MySQL
+# Login Register System
 
-Projeto de autenticação de usuários com cadastro e login.
+Sistema de autenticação de usuários desenvolvido com Spring Boot, Angular e MySQL, permitindo cadastro e login de usuários através de uma API REST integrada a uma interface web.
 
-## 🚀 Tecnologias usadas
-- Java 17+
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- Maven
+## Tecnologias Utilizadas
 
-## 📌 Funcionalidades
-- Cadastro de usuário
-- Login de usuário
-- Validação de senha
-- API REST
+* Java 17
+* Spring Boot
+* Spring Data JPA
+* Angular
+* MySQL
+* Maven
+* TypeScript
+* HTML/CSS
 
-## 📂 Estrutura do projeto
-- Controller → Endpoints da API
-- Service → Regras de negócio
-- Repository → Acesso ao banco
-- Entity → Modelagem das tabelas
+## Funcionalidades
+
+* Cadastro de usuários
+* Autenticação de usuários
+* Validação de credenciais
+* Persistência de dados em banco MySQL
+* API REST para comunicação entre frontend e backend
+* Interface web desenvolvida em Angular
+
+## Estrutura do Projeto
+
+* Controller → Endpoints da API
+* Service → Regras de negócio
+* Repository → Acesso ao banco de dados
+* Entity → Modelagem das entidades
+* Frontend → Interface Angular
+
+## Objetivo
+
+Projeto desenvolvido para prática de desenvolvimento Full Stack utilizando Spring Boot, Angular e banco de dados relacional.
