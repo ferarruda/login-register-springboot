@@ -37,10 +37,10 @@ Projeto desenvolvido para prática de desenvolvimento Full Stack utilizando Spri
 ## 📸 Demonstração
 
 ### Página Inicial
-![Página Inicial](docs/homepage.PNG)
+![Página Inicial](docs/Homepage.PNG)
 
 ### Login
 ![Login](docs/Cadastro.PNG)
 
 ### Usuários
-![Usuários](docs/usuario.PNG)
+![Usuários](docs/Usuario.PNG)
